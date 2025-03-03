@@ -1,29 +1,3 @@
-# Front Matter
-
-**Title:** CIDM 6330-70: Assignment 02 - From Specification to API
-
-**Description:** A description of the CIDM 6330-70 course project’s Requirements Specification.
-
-**Author:** David Slack
-
-**Created Date:** 2025-03.02
-
-**Last Modified:** 2025-03.02
-
-**Document Status:** Final
-
-**Document Version:** 1.0.0
-
-![Cover Image](cover.jpg)
-
-
-# Assignment Deliverables:
-## Enhanced Entity Relationship Diagram (EERD)
-
-## Python Code (main.py)
-* main.py file also available
-
-```python
 
 """
 Script Name: [main.py]
@@ -85,7 +59,7 @@ member_id_counter = 1
 
 app = FastAPI()
 
-# Pydantic Model for entity member
+# Pydantic Model for entity member (applicant)
 class member(BaseModel):
     id: int
     firstname: str
@@ -93,6 +67,38 @@ class member(BaseModel):
     dob: date
     gender: str
     is_active: bool = True
+
+
+# =============================================
+# Additional models without API endpoints established yet!
+# =============================================
+# Pydantic Model for entity program
+class program(BaseModel):
+    program_id: int
+    program_name: str
+    program_description: str
+    program_state: str
+    program_type_id: int
+    min_age: int
+    max_age: int
+    residency_required: bool = True
+
+# Pydantic Model for entity address
+class address(BaseModel):
+    address_id: int
+    street_number: str
+    appartment_number: str
+    street: str
+    city: str
+    state: str
+    zip: str
+    
+# Pydantic Model for entity contact
+class contact(BaseModel):
+    contact_id: int
+    first_name: str
+    last_name: str
+
 
 # In-memory database with 10 example members. 
 # Each member stored as a dictionary
@@ -162,41 +168,4 @@ def delete_member(member_id: int):
     global members
     members = [member for member in members if member["id"] != member_id]
     return {"message": "member deleted successfully"}
-
-
-```
-## Root Response Message: http://127.0.0.1:8000/
-### Browser Screen Capture
-![Root Response Message](2025-03-02_15-23-35.jpg)
-
-## Open Swagger UI: http://127.0.0.1:8000/docs
-### Browser Screen Capture
-![Swagger UI](2025-03-02_15-22-49.jpg)
-
-## Open Redoc UI: http://127.0.0.1:8000/redoc
-### Browser Screen Capture
-![Redoc UI](2025-03-02_15-25-02.jpg)
-
-
-# References:
-## Course Text:
-Buelta, J. (2022). Python architecture patterns: Master API design, event-driven structures, and package management in Python. Packt Publishing.
-https://www.amazon.com/Python-Architecture-Patterns-event-driven-structures/dp/1801819998
-
-## Course References:
-1. Tiangolo. (n.d.). FastAPI. FastAPI Documentation. Retrieved February 24, 2025, from https://fastapi.tiangolo.com/
-2. Tiangolo. (n.d.). FastAPI reference. FastAPI Documentation. Retrieved February 24, 2025, from https://fastapi.tiangolo.com/reference/
-3. Pydantic. (n.d.). Pydantic documentation. Retrieved February 27, 2025, from https://docs.pydantic.dev/latest/
-4. Pydantic. (n.d.). BaseModel API. Pydantic Documentation. February 27, 2025, from https://docs.pydantic.dev/latest/api/base_model/
-
-## Additional Text References:
-
-1. Matthes, E. (2019). Python crash course: A hands-on, project-based introduction to programming (2nd ed.). No Starch Press. 
-2. Richards, M., & Ford, N. (2020). Fundamentals of software architecture: An engineering approach. O'Reilly Media. 
-3. Unhelkar, B. (2005). Software engineering with UML: Process, patterns, and applications. Auerbach Publications 
-4. Dennis, A., Wixom, B. H., & Tegarden, D. (2020). Systems analysis and design: An object-oriented approach with UML (6th ed.). Wiley. 
-5. Schulmeyer, G. G., & McManus, J. I. (1998). Handbook of software quality assurance (3rd ed.). Prentice Hall.
-6. Golding, T. (2024). Building multi-tenant SaaS applications. O'Reilly Media.
-7. Voron, F. (2023). Building data science applications with FastAPI - Second Edition: Develop, manage, and deploy efficient machine learning applications with Python. Packt Publishing.
-
 
