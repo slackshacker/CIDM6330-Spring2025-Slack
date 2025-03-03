@@ -14,11 +14,10 @@
 
 **Document Version:** 1.0.0
 
-![Cover Image](cover.jpg)
-
 
 # Assignment Deliverables:
 ## Enhanced Entity Relationship Diagram (EERD)
+![EERD](Assignment_2.jpg)
 
 ## Python Code (main.py)
 * main.py file also available
