@@ -1,0 +1,18 @@
+Address_ID,Street_No,Street,City,State,Zip,Type,Owner_ID,Owner_Type
+1,9749,Oak Dr,Idaho Falls,ID,83402,Other,1,Self
+2,9241,Main St,Boise,ID,83702,Home,1,Self
+4,6039,Elm St,Coeur d'Alene,ID,83814,Home,10,Legal Guardian
+6,2783,Broadway Ave,Nampa,ID,83686,Work,2,Parent
+7,2870,Elm St,Idaho Falls,ID,83402,Other,2,Self
+8,5464,Oak Dr,Nampa,ID,83686,Other,10,Self
+9,1694,Cedar Ave,Lewiston,ID,83501,Work,7,Legal Guardian
+10,3657,Maple Rd,Lewiston,ID,83501,Work,9,Legal Guardian
+12,5361,Maple Rd,Coeur d'Alene,ID,83814,Work,2,Parent
+13,9238,Cedar Ave,Twin Falls,ID,83301,Other,6,Self
+14,3887,Main St,Idaho Falls,ID,83402,Work,2,Self
+15,2433,Cedar Ave,Rexburg,ID,83440,Work,5,Legal Guardian
+16,3295,Main St,Twin Falls,ID,83301,Other,1,Legal Guardian
+17,4714,Maple Rd,Meridian,ID,83642,Other,8,Parent
+18,2957,Broadway Ave,Lewiston,ID,83501,Work,2,Parent
+19,1370,Cedar Ave,Meridian,ID,83642,Home,9,Legal Guardian
+20,4194,Cedar Ave,Pocatello,ID,83201,Other,9,Legal Guardian
