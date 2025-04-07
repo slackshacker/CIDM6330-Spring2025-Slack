@@ -161,7 +161,7 @@ Now Run the Development Server to Confirm Everything is in Place
 # Project Contents & Artifacts
 
 ## API Root: http://127.0.0.1:8000/ Image
-![http://127.0.0.1:8000/ Image]("API Root.jpg")
+![http://127.0.0.1:8000/ Image]('API Root.jpg')
 
 ## API Endpoints: http://127.0.0.1:8000/api/ Image
 ![http://127.0.0.1:8000/api/ Image]("API Endpoints.jpg")
