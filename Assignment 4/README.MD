@@ -161,33 +161,33 @@ Now Run the Development Server to Confirm Everything is in Place
 # Project Contents & Artifacts
 
 ## API Root: http://127.0.0.1:8000/ Image
-![http://127.0.0.1:8000/ Image](API Root.jpg)
+![http://127.0.0.1:8000/ Image]("API Root.jpg")
 
 ## API Endpoints: http://127.0.0.1:8000/api/ Image
-![http://127.0.0.1:8000/api/ Image](API Endpoints.jpg)
+![http://127.0.0.1:8000/api/ Image]("API Endpoints.jpg")
 
 ## Django Admin: http://127.0.0.1:8000/admin/ Images
 
 ### Django Admin
-![http://127.0.0.1:8000/admin/ Image](Django Admin.jpg)
+![http://127.0.0.1:8000/admin/ Image]("Django Admin.jpg")
 
 ### Django Admin, Login
-![http://127.0.0.1:8000/admin/ Image](Django Admin, Login.jpg)
+![http://127.0.0.1:8000/admin/ Image]("Django Admin, Login.jpg")
 
 ### Django Admin, Addresses
-![http://127.0.0.1:8000/admin/ Image](Django Admin, Addresses.jpg)
+![http://127.0.0.1:8000/admin/ Image]("Django Admin, Addresses.jpg")
 
 ### Django Admin, Applicants
-![http://127.0.0.1:8000/admin/ Image](Django Admin, Applicants.jpg)
+![http://127.0.0.1:8000/admin/ Image]("Django Admin, Applicants.jpg")
 
 ### Django Admin, Contacts
-![http://127.0.0.1:8000/admin/ Image](Django Admin, Contacts.jpg)
+![http://127.0.0.1:8000/admin/ Image]("Django Admin, Contacts.jpg")
 
 ### Django Admin, Groups
-![http://127.0.0.1:8000/admin/ Image](Django Admin, Groups.jpg)
+![http://127.0.0.1:8000/admin/ Image]("Django Admin, Groups.jpg")
 
 ### Django Admin, Users
-![http://127.0.0.1:8000/admin/ Image](Django Admin, Users.jpg)
+![http://127.0.0.1:8000/admin/ Image]("Django Admin, Users.jpg")
 
 
 # Python Code
