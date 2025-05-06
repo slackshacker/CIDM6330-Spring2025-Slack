@@ -12,7 +12,7 @@ from .serializers import (
 
 from .tasks import simulate_long_task
 
-# 📌 Root view for the home page
+# Root view for the home page
 @api_view(['GET'])
 def root_view(request):
     return Response({
@@ -20,7 +20,7 @@ def root_view(request):
         "api_base": "/api/"
     })
 
-# 📌 API root overview endpoint
+# API root overview endpoint
 @api_view(['GET'])
 def api_root(request):
     return Response({
@@ -33,34 +33,34 @@ def api_root(request):
         }
     })
 
-# 📌 User API view (DRF ViewSet)
+# User API view (DRF ViewSet)
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all().order_by('-date_joined')
     serializer_class = UserSerializer
     permission_classes = [permissions.IsAuthenticated]
 
-# 📌 Group API view (DRF ViewSet)
+# Group API view (DRF ViewSet)
 class GroupViewSet(viewsets.ModelViewSet):
     queryset = Group.objects.all().order_by('name')
     serializer_class = GroupSerializer
     permission_classes = [permissions.IsAuthenticated]
 
-# 📌 Applicant API endpoint
+# Applicant API endpoint
 class ApplicantViewSet(viewsets.ModelViewSet):
     queryset = Applicant.objects.all()
     serializer_class = ApplicantSerializer
 
-# 📌 Address API endpoint
+# Address API endpoint
 class AddressViewSet(viewsets.ModelViewSet):
     queryset = Address.objects.all()
     serializer_class = AddressSerializer
 
-# 📌 Contact API endpoint
+# Contact API endpoint
 class ContactViewSet(viewsets.ModelViewSet):
     queryset = Contact.objects.all()
     serializer_class = ContactSerializer
 
-# 📌 Launch 10 async Celery tasks, spaced 30 seconds apart
+# Launch 10 async Celery tasks, spaced 30 seconds apart
 @api_view(['POST'])
 def launch_tasks(request):
     for i in range(10):

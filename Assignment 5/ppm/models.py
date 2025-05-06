@@ -1,6 +1,6 @@
 from django.db import models
 
-# 🔹 Applicant model to represent individual applicant records
+# Applicant model to represent individual applicant records
 class Applicant(models.Model):
     FirstName = models.CharField(max_length=100)
     LastName = models.CharField(max_length=100)
@@ -11,7 +11,7 @@ class Applicant(models.Model):
     def __str__(self):
         return f"{self.FirstName} {self.LastName}"
 
-# 🔹 Address model to store mailing and physical address records
+# Address model to store mailing and physical address records
 class Address(models.Model):
     Street_No = models.CharField(max_length=10)
     Street = models.CharField(max_length=100)
@@ -25,7 +25,7 @@ class Address(models.Model):
     def __str__(self):
         return f"{self.Street_No} {self.Street}, {self.City}"
 
-# 🔹 Contact model for emergency or supporting contacts
+# Contact model for emergency or supporting contacts
 class Contact(models.Model):
     First_Name = models.CharField(max_length=100)
     Last_Name = models.CharField(max_length=100)
